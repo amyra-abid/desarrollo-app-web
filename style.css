@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: solid 1px red;*/
+}
+
+
+.margin, .border, .padding, .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px 30px 30px;
+
+}
+
+.margin p, .border p, .paddig p, .content p{
+    margin-bottom: 20px;
+}
+
+.margin{
+    width: 950px;
+    padding: 10px 20px 30px 30px;
+    background-color: #d15b19;
+
+}
+
+.padding{
+    width: 500px;
+    padding: 20px;
+    background-color: #459fc7;
+}
+.content{
+    width: 200px;
+    height: 40px;
+    background-color: #9fcae0;
+}
+
+.border{
+    background-color: #e5a685;
+    width: 600px;
+}
