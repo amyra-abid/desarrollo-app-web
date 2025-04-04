@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    background-color: aqua;
+}
+
+
+.row{
+    display: flex;
+    width: 80%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.col{
+    background-color: #2a9d8f;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+

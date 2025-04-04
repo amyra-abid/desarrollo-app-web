@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    /outline:solid 1px black;/
+
+}
+
+.button{
+    border: 2px solid #00a5a5;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 10px;
+    color: #119b9d;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container{
+    width:300px;
+    padding:50px
+}
+
+.button2{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius:50px;
+    cursor: pointer;
+    background-color: #00d1b2 ;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+
+.button3{
+    display: block;
+    width: 200px;
+    height:500%;
+    cursor: pointer;
+    box-shadow: 3px 3px rgb(0,0,0,50);
+    margin-top: 20px;
+    background-color: #2b78e4;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
