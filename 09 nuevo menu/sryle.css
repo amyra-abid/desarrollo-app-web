@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: solid 1px brown;
+
+}
+
+.nav{
+    background-color: black;
+    height: 100px;
+}
+
+.nav-link{
+
+}
+
+li{
+    list-style-type: nome ;
+}
