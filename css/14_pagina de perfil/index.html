@@ -3,91 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
+    <title>Perfil de Usuario</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Perfil</h1>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Mi perfil</a>
-            <a href="#">Conexiones</a>
-            <button>Cerrar sesión</button>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="col">Perfil</div>
+        <div class="row">
+            <div class="col1"><a href="#">Inicio</a></div>
+            <div class="col2"><a href="#">Mi perfil</a></div>
+            <div class="col3"><a href="#">Conexiones</a></div>
+            <button class="col4"><a href="#">Cerrar sesión</a></button>
+        </div>
+    </nav>
 
-    <main>
-        <section class="profile-card">
-            <div class="profile-info">
-                <div class="avatar"></div>
-                <h2>Jane Doe</h2>
-                <p>Bergen, Noruega</p>
-                <p>Desarrolladora Frontend</p>
-                <p>Conocimientos en HTML, CSS, JavaScript</p>
-                <a href="#">Editar perfil</a>
+    <div class="main-container">
+        <div class="profile">
+            <div class="header"></div>
+            <img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar">
+            <h1>Jane Doe</h1>
+            <p class = "ubicacion">Bergen, Noruega</p>
+            <p class="info">Desarrolladora Frontend</p>
+            <p class="info">Conocimientos en HTML, CSS, JavaScript</p>
+            <a href="#" class="editar"><img src="img/img/Captura de pantalla 2025-05-12 102856.png" alt="editar"> Editar perfil</a>
+        </div>
+        <div class="right-panel">
+            <div class="card solicitudes">
+                <h3>Solicitudes de conexión <a href="#">Ver todas</a></h3>
+                <div class="solicitud">
+                    <img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar-small">
+                    <span class="nombre">Steve Jobs</span>
+                    <div class="action-buttons">
+                        <button class="accept"><img src="img/img/check-icon.png" alt="Aceptar"></button>
+                        <button class="reject"><img src="img/img/delete-1-icon.png" alt="Rechazar"></button>
+                    </div>
+                </div>
+                <div class="solicitud">
+                    <img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar-small">
+                    <span class="nombre">Bill Gates</span>
+                    <div class="action-buttons">
+                        <button class="accept"><img src="img/img/check-icon.png" alt="Aceptar"></button>
+                        <button class="reject"><img src="img/img/delete-1-icon.png" alt="Rechazar"></button>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section class="connections">
-            <div class="connection-requests">
-                <h3>Solicitudes de conexión</h3>
-                <a href="#" class="view-all">Ver todas</a>
+            <div class="card-conexiones">
+                <h3>Tus conexiones <a href="#">Ver todas</a></h3>
                 <ul>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Steve Jobs</p>
-                        </div>
-                        <div class="actions">
-                            <button>✓</button>
-                            <button>X</button>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Bill Gates</p>
-                        </div>
-                        <div class="actions">
-                            <button>✓</button>
-                            <button>X</button>
-                        </div>
-                    </li>
+                    <li><img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar">Richard Stallman</li>
+                    <li><img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar">Linus Torvalds</li>
+                    <li><img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar">Ada Lovelace</li>
+                    <li><img src="img/img/user-icon.png" alt="Foto de perfil" class="avatar">Grace Hopper</li>
                 </ul>
             </div>
-
-            <div class="my-connections">
-                <h3>Tus conexiones</h3>
-                <a href="#" class="view-all">Ver todas</a>
-                <ul>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Richard Stallman</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Linus Torvalds</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Ada Lovelace</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="user">
-                            <div class="avatar"></div>
-                            <p>Grace Hopper</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 </html>
