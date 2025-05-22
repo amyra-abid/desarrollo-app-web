@@ -1,0 +1,49 @@
+/* Configuración base para el cuerpo */
+body {
+    font-family: 'Arial Narrow', Arial, Helvetica, sans-serif;
+    background-color: #e8ebf0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Estilo principal del contenedor */
+.container {
+    background-color: #fafafa;
+    margin-top: 45px;
+    padding: 35px 50px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    width: 92%;
+    max-width: 620px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 15px;
+    margin: 14px 0 8px;
+    color: #555555;
+}
+
+/* Estilo y comportamiento del botón */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: background-color 0.25s ease;
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #155ab6;
+}

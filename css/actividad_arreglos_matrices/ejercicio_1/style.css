@@ -1,0 +1,45 @@
+/* Estilos base para toda la página */
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    width: 95%;
+    max-width: 650px;
+}
+
+p {
+    font-size: 17px;
+    margin: 12px 0 8px;
+    color: #555555;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 17px;
+    background-color: #1d4ed8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: background-color 0.25s ease;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
