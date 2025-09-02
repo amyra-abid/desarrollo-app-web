@@ -1,0 +1,157 @@
+/* General */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #23494b;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Logo y encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #fff;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cronos-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #33c9ab;
+    line-height: 1;
+}
+.dosis-subtitle {
+    font-size: 1.25rem;
+    color: #6ee7df;
+    margin-top: -8px;
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+/* Contenedor principal */
+.main-container {
+    background: #276a6c;
+    border-radius: 24px;
+    margin: 20px;
+    padding: 28px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+}
+
+/* Bienvenido */
+.welcome-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.welcome-desc {
+    color: #c9efe4;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+/* Agenda */
+.agenda-section {
+    margin: 18px 0 16px 0;
+}
+.agenda-label {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.agenda-label .check {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #33c9ab;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+/* Tarjetas de medicamentos */
+.card {
+    border-radius: 16px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.card.active {
+    background: #c7e7de;
+    color: #133636;
+}
+.card.inactive {
+    background: #e0eff0;
+    color: #7d9492;
+}
+.card .card-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+}
+.card .card-title {
+    font-size: 1.16rem;
+    font-weight: bold;
+}
+.card .card-status {
+    font-size: 0.95rem;
+    color: #31b5a3;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+/* Sincronización */
+.sync-section {
+    margin: 10px 0 18px 0;
+    color: #dbecec;
+    font-size: 1rem;
+}
+.sync-time {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Botones */
+.button-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.button {
+    flex: 1;
+    padding: 14px 0;
+    border-radius: 17px;
+    border: none;
+    background: #33c9ab;
+    color: #133636;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+.button:hover {
+    background: #279586;
+}
+.button.secondary {
+    background: #e0eff0;
+    color: #276a6c;
+}

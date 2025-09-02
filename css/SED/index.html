@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tuberculosis - Información</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0 20px;
+            color: #333;
+        }
+        header {
+            background-color: #2874A6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 5px;
+        }
+        #content {
+            display: none;
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 7px rgba(0,0,0,0.15);
+        }
+        h2 {
+            color: #2874A6;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        button {
+            background-color: #2874A6;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1b4f73;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tuberculosis (TB)</h1>
+</header>
+
+<button id="showBtn">Ingresar a la página</button>
+
+<div id="content">
+    <section>
+        <h2>¿Qué es la Tuberculosis?</h2>
+        <p>La tuberculosis es una enfermedad infecciosa causada por la bacteria <em>Mycobacterium tuberculosis</em>, que principalmente afecta los pulmones, aunque puede afectar otros órganos. Se transmite por el aire al toser o estornudar.</p>
+    </section>
+
+    <section>
+        <h2>Síntomas comunes</h2>
+        <ul>
+            <li>Tos persistente por más de tres semanas</li>
+            <li>Fiebre y sudores nocturnos</li>
+            <li>Pérdida de peso y apetito</li>
+            <li>Fatiga y debilidad</li>
+            <li>Dolor en el pecho</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Prevención</h2>
+        <ul>
+            <li>Vacunación con BCG</li>
+            <li>Evitar el contacto cercano con personas infectadas</li>
+            <li>Ventilar bien los espacios cerrados</li>
+            <li>Cubrirse la boca al toser o estornudar</li>
+            <li>Seguir el tratamiento médico adecuado si se contrae TB</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Grupos de riesgo</h2>
+        <ul>
+            <li>Personas con sistema inmunológico debilitado (como VIH/SIDA)</li>
+            <li>Personas que viven en condiciones de hacinamiento</li>
+            <li>Pacientes con enfermedades crónicas como diabetes</li>
+            <li>Personas en contacto cercano con infectados</li>
+            <li>Personas con desnutrición o pobres condiciones de salud</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Propuesta de solución hacia la Tuberculosis</h2>
+        <p>Es fundamental fortalecer la detección temprana y el acceso al tratamiento completo para prevenir la propagación. Además, promover campañas de sensibilización y mejorar las condiciones de vida en comunidades vulnerables son acciones clave. La investigación continua para vacunas más efectivas y tratamientos innovadores también es crucial.</p>
+    </section>
+</div>
+
+<script>
+    const btn = document.getElementById('showBtn');
+    const content = document.getElementById('content');
+    
+    btn.addEventListener('click', () => {
+        content.style.display = 'block';
+        btn.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

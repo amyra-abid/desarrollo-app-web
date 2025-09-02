@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Actividad DOM - Formularios</title>
+    <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+<body>
+<main>
+    <h1>Actividad: Manipulación del DOM con Formularios</h1>
+
+    <!-- Ejercicio 1: Registro de Estudiante -->
+    <section id="ejercicio1">
+        <h2>Ejercicio 1: Registro de Estudiante</h2>
+        <form id="formRegistroEstudiante" novalidate>
+        <div>
+          <label for="nombre">Nombre *</label>
+            <input id="nombre" name="nombre" type="text" required minlength="2" aria-describedby="nombreHelp" />
+            <small id="nombreHelp">mínimo 2 caracteres</small>
+        </div>
+
+        <div>
+          <label for="edad">Edad *</label>
+            <input id="edad" name="edad" type="number" required min="14" max="100" />
+        </div>
+
+        <div>
+          <label for="curso">Curso *</label>
+            <select id="curso" name="curso" required>
+            <option value="" disabled selected>Seleccione curso</option>
+            <option value="3° Medio">3° Medio</option>
+            <option value="4° Medio">4° Medio</option>
+        </select>
+        </div>
+
+        <fieldset>
+          <legend>Jornada *</legend>
+            <label><input type="radio" name="jornada" value="Mañana" required /> Mañana</label>
+            <label><input type="radio" name="jornada" value="Tarde" /> Tarde</label>
+        </fieldset>
+
+        <div>
+    <label>
+            <input type="checkbox" id="aceptaReglamento" name="aceptaReglamento" required />
+            Acepto el reglamento *
+            </label>
+        </div>
+
+        <button type="submit">Registrar</button>
+        <button type="button" id="btnLimpiarRegistro">Limpiar</button>
+        </form>
+    <p class="resultado" aria-live="polite"></p>
+    <p class="error" aria-live="polite"></p>
+    </section>
+
+    <hr />
+
+    <!-- Ejercicio 2: Calculadora de Promedio de Notas -->
+    <section id="ejercicio2">
+        <h2>Ejercicio 2: Calculadora de Promedio de Notas</h2>
+        <form id="formNotas" novalidate>
+        <div>
+          <label for="nota">Agregar Nota (1.0 - 7.0) *</label>
+            <input id="nota" name="nota" type="number" step="0.1" min="1" max="7" required />
+        </div>
+        <button type="button" id="btnAgregarNota">Agregar Nota</button>
+        <button type="button" id="btnCalcularPromedio">Calcular Promedio</button>
+        <button type="button" id="btnEliminarUltimaNota">Eliminar Última Nota</button>
+        <button type="button" id="btnLimpiarNotas">Limpiar Notas</button>
+    </form>
+
+        <p class="resultado" aria-live="polite"></p>
+        <p class="error" aria-live="polite"></p>
+    </section>
+    </main>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
+
+
+
