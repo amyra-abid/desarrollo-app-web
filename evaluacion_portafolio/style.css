@@ -1,0 +1,113 @@
+/* --- Estilos generales --- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* --- Sección inicio --- */
+.inicio {
+    background-color: #cf9776;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.intro h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.arrow {
+    font-size: 2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* --- Sección sobre mí --- */
+.sobre-mi {
+    background-color: #fff;
+    color: #333;
+    padding: 60px 100px;
+}
+
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.texto {
+    width: 45%;
+    line-height: 1.6;
+}
+
+.skills {
+    width: 45%;
+}
+
+.barra {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    bottom: center;
+}
+
+.nivel {
+    height: 10px;
+    background-color: #9e9475;
+}
+
+.html { width: 90%; }
+.js, .csharp, .react { width: 75%; }
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.servicio img {
+    width: 60px;
+    height: 60px;
+}
+
+.servicio h3 {
+    margin-top: 10px;
+}
+
